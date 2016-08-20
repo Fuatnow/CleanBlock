@@ -1,0 +1,33 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "wavemove2",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_duration": 2,
+  "sample": 60,
+  "speed": 0.6,
+  "wrapMode": 2,
+  "curveData": {
+    "props": {
+      "x": [
+        {
+          "frame": 0,
+          "value": 1287
+        },
+        {
+          "frame": 2,
+          "value": -1287
+        },
+        {
+          "frame": 2,
+          "value": 1020
+        },
+        {
+          "frame": 2,
+          "value": 1287
+        }
+      ]
+    }
+  },
+  "events": []
+}

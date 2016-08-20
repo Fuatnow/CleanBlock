@@ -1,0 +1,75 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "startAction",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_duration": 1.75,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 2,
+  "curveData": {
+    "props": {
+      "y": [
+        {
+          "frame": 0,
+          "value": -100
+        },
+        {
+          "frame": 0.15,
+          "value": -100
+        },
+        {
+          "frame": 0.31666666666666665,
+          "value": -90
+        },
+        {
+          "frame": 0.45,
+          "value": -100
+        },
+        {
+          "frame": 0.5833333333333334,
+          "value": -95
+        },
+        {
+          "frame": 0.6666666666666666,
+          "value": -100
+        },
+        {
+          "frame": 1.75,
+          "value": -100
+        }
+      ],
+      "scaleY": [
+        {
+          "frame": 0,
+          "value": 1.05
+        },
+        {
+          "frame": 0.15,
+          "value": 0.9
+        },
+        {
+          "frame": 0.31666666666666665,
+          "value": 0.95
+        },
+        {
+          "frame": 0.45,
+          "value": 0.98
+        },
+        {
+          "frame": 0.5833333333333334,
+          "value": 0.99
+        },
+        {
+          "frame": 0.6666666666666666,
+          "value": 1
+        },
+        {
+          "frame": 1.75,
+          "value": 1
+        }
+      ]
+    }
+  },
+  "events": []
+}

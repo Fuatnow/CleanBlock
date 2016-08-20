@@ -1,0 +1,73 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "leftToRight",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_duration": 4.02,
+  "sample": 60,
+  "speed": 0.2,
+  "wrapMode": 1,
+  "curveData": {
+    "props": {
+      "x": [
+        {
+          "frame": 0,
+          "value": -521
+        },
+        {
+          "frame": 4,
+          "value": 512
+        },
+        {
+          "frame": 4.016666666666667,
+          "value": 519
+        }
+      ],
+      "scaleX": [
+        {
+          "frame": 0,
+          "value": -0.5
+        },
+        {
+          "frame": 1.9166666666666667,
+          "value": -0.65
+        },
+        {
+          "frame": 2.0833333333333335,
+          "value": -0.65
+        },
+        {
+          "frame": 4,
+          "value": -0.4
+        },
+        {
+          "frame": 4.016666666666667,
+          "value": -0.5
+        }
+      ],
+      "scaleY": [
+        {
+          "frame": 0,
+          "value": 0.5
+        },
+        {
+          "frame": 1.9166666666666667,
+          "value": 0.65
+        },
+        {
+          "frame": 2.0833333333333335,
+          "value": 0.65
+        },
+        {
+          "frame": 4,
+          "value": 0.4
+        },
+        {
+          "frame": 4.016666666666667,
+          "value": 0.5
+        }
+      ]
+    }
+  },
+  "events": []
+}

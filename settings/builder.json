@@ -1,0 +1,13 @@
+{
+  "excludeScenes": [],
+  "orientation": {
+    "landscapeLeft": false,
+    "landscapeRight": false,
+    "portrait": true,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.cleanBlock",
+  "startScene": "0d82aef2-8fb1-4361-b51a-ea8ec9252b56",
+  "title": "cleanBlock",
+  "webOrientation": "portrait"
+}

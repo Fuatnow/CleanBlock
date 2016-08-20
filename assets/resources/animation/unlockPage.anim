@@ -1,0 +1,35 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "unlockPage",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_duration": 1.4833333333333334,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "props": {
+      "y": [
+        {
+          "frame": 0,
+          "value": -520
+        },
+        {
+          "frame": 0.3333333333333333,
+          "value": -306
+        },
+        {
+          "frame": 1.4833333333333334,
+          "value": -306
+        }
+      ]
+    }
+  },
+  "events": [
+    {
+      "frame": 1.4833333333333334,
+      "func": "activeSelfFalse",
+      "params": []
+    }
+  ]
+}

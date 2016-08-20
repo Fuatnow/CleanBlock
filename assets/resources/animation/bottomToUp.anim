@@ -1,0 +1,67 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "bottomToUp",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_duration": 5,
+  "sample": 60,
+  "speed": 0.7,
+  "wrapMode": 1,
+  "curveData": {
+    "props": {
+      "y": [
+        {
+          "frame": 0,
+          "value": -649
+        },
+        {
+          "frame": 4.983333333333333,
+          "value": 695
+        },
+        {
+          "frame": 5,
+          "value": 1307
+        }
+      ],
+      "opacity": [
+        {
+          "frame": 0,
+          "value": 255
+        },
+        {
+          "frame": 3.466666666666667,
+          "value": 255
+        },
+        {
+          "frame": 4.75,
+          "value": 0
+        }
+      ],
+      "scaleX": [
+        {
+          "frame": 0,
+          "value": 0.1
+        },
+        {
+          "frame": 4.75,
+          "value": 0.6224999999999999
+        },
+        {
+          "frame": 5,
+          "value": 0.65
+        }
+      ],
+      "scaleY": [
+        {
+          "frame": 0,
+          "value": 0.1
+        },
+        {
+          "frame": 5,
+          "value": 0.65
+        }
+      ]
+    }
+  },
+  "events": []
+}
