@@ -18,6 +18,7 @@ cc.Class({
         {
             this.gameTitle.spriteFrame = this.titleSpriteFrameEn;
         }
+        console.log('onLoad');
     },
 
 

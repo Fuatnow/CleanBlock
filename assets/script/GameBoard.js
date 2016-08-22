@@ -34,7 +34,7 @@ cc.Class({
     // use this for initialization
     onLoad: function () 
     {
-        cc.log("onLoad");
+        console.log("onLoad");
         this.initData();
         this.initView();
         this.initListener();
@@ -154,7 +154,7 @@ cc.Class({
         var bSize = block0.node.getContentSize();
         var rBoardWordPos = rotateBoard.blockNodes.convertToWorldSpaceAR(cc.p(0,0));
         var inBoardPos = this.blockBoard.node.convertToNodeSpace(rBoardWordPos);
-        cc.log(inBoardPos.toString());
+        console.log(inBoardPos.toString());
         if(inBoardPos.x<0 || inBoardPos.y<0 || inBoardPos.x > gBSize.width || inBoardPos.y > gBSize.height+bSize.height*0.5)
         {
             return false;
@@ -189,7 +189,8 @@ cc.Class({
             block.setAttribute(cood.x,cood.y,block._num);
         }     
         this._dropingBlock = true;
-        this.schedule(this.fallblocks,1,-1,0.3);
+        this.schedule(this.fallblocks,1,1000,0.3,false);
+        // this.schedule(this.fallblocks, this,1,  -1,0.3,false);
         return true;
     },
 
@@ -202,8 +203,10 @@ cc.Class({
         }
         
         this.moveBlocks();
+        console.log("moveBlocks");
         if(this.getHaveBlockToFall() == false)
         {
+            console.log("getHaveBlockToFall");
             this.unschedule(this.fallblocks);
             this.scheduleOnce(function(){
                 this.moveBlocks();

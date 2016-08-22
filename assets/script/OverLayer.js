@@ -52,7 +52,7 @@ cc.Class({
                          var canUnlockPage = g_gameDataManager.canPageUnlock(i);
                          if(canUnlockPage == true)
                          {
-                             cc.log(i+"-----");
+                             console.log(i+"-----");
                              g_gameDataManager.setPageUnlock(i,true);
                              this.showUnLockTip(i);
                              break;
@@ -66,19 +66,19 @@ cc.Class({
 
     restartCallBack()
     {
-        cc.log("restartCallBack");
+        console.log("restartCallBack");
         cc.director.loadScene('GameScene');
     },
 
     homeCallBack()
     {
-        cc.log("homeCallBack");
+        console.log("homeCallBack");
         cc.director.loadScene('LevelSelectScene');
     },
 
     nextCallBack()
     {
-        cc.log("nextCallBack");
+        console.log("nextCallBack");
         var curLevel = g_gameDataManager.getLevel();
         if((curLevel+1)%25 == 0)
         {
@@ -93,7 +93,7 @@ cc.Class({
 
     infoCallBack()
     {
-        cc.log("infoCallBack");
+        console.log("infoCallBack");
     },
 
     showUnLockTip(pageIndex)

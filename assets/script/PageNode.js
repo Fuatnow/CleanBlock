@@ -49,7 +49,7 @@ cc.Class({
         var tag = event.target.tag;
         if(tag == this.selCardIndex)
         {
-           cc.log("levelPageCallBack");
+           console.log("levelPageCallBack");
            var isUnlock = g_gameDataManager.isPageUnLock(tag);
            if(isUnlock == true)
            {

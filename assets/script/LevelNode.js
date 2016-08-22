@@ -63,7 +63,7 @@ cc.Class({
 
     clickCallBack()
     {
-        cc.log(this._level);
+        console.log(this._level);
         g_gameDataManager.setLevel(this._level);
         // //打乱numArray增加难度
         // var levelpage = g_gameDataManager.getLevelPage();

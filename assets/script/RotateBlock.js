@@ -127,7 +127,7 @@ cc.Class({
 
     // called every frame, uncomment this function to activate update callback
     // update: function (dt) {
-    //     cc.log("active:"+this.rotateSp.node.active);
+    //     console.log("active:"+this.rotateSp.node.active);
     //     this.activeRotateBlock(true);
     // },
 });

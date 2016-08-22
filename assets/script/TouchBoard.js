@@ -48,7 +48,7 @@ cc.Class({
 
     selBoard(rotateBoard)
     {
-        cc.log("selBoard");
+        console.log("selBoard");
         this._selBorad = rotateBoard;
         this.activeRotateBoards(false);
     },
@@ -58,7 +58,7 @@ cc.Class({
         var placeSuc = this.gameBoard.placeBoard(rotateBoard);
         if(placeSuc == false)
         {
-            cc.log("can not place");
+            console.log("can not place");
             this.activeRotateBoards(true);
 
             var audioNode = cc.find("AudioControl");
@@ -66,7 +66,7 @@ cc.Class({
         } 
         else
         {
-            cc.log("place ok");
+            console.log("place ok");
             // this.rotateBlockArray[rotateBoard.node.tag] = null;
             this.rotateBlockArray.splice(rotateBoard.node.tag,1);
             rotateBoard.node.runAction(cc.removeSelf());
@@ -76,7 +76,7 @@ cc.Class({
 
     activeRotateBoards(enable)
     {
-        cc.log("activeRotateBoards"+this.rotateBlockArray.length);
+        console.log("activeRotateBoards"+this.rotateBlockArray.length);
         for(var i=0;i<this.rotateBlockArray.length;i++)
         {
             var rotateBoard = this.rotateBlockArray[i];

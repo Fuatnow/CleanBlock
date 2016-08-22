@@ -181,18 +181,18 @@ cc.Class({
             var cardWordPos = card.convertToWorldSpaceAR(cc.p(0,0));
             var disMid = (this.horizontal ? midPos.x - cardWordPos.x : midPos.y - cardWordPos.y);
             var toScale = 1 - Math.abs(disMid - minLen)/ this.distance * this.disscale;
-            card.runAction(cc.ScaleTo(0.2,toScale));
+            card.runAction(cc.scaleTo(0.2,toScale));
             var zOr = 1000 - disMid*0.1;
             card.setLocalZOrder(zOr);
         }
         var moveByPos = (this.horizontal?cc.p(minLen,0) : cc.p(0,minLen));
-        var seq = cc.Sequence(cc.MoveBy(0.2, moveByPos),cc.CallFunc(function(){
-            // cc.log("moveEnd");
+        var seq = cc.sequence(cc.moveBy(0.2, moveByPos),cc.callFunc(function(){
+            // console.log("moveEnd");
             if (this.selCallBacks != null)  
             {  
                 cc.Component.EventHandler.emitEvents(this.selCallBacks, midCard);
             }  
-        }.bind(this),midCard));
+        }.bind(this)));
         this.content.runAction(seq);  
     },
 

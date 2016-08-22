@@ -23,7 +23,7 @@ cc.Class({
         var aenable = cc.sys.localStorage.getItem("audioEnable");
         if(aenable == null) aenable = "true";
         this._audioEnable = (aenable == "true");
-        cc.log('onLoad'+"  "+aenable+"  "+this._audioEnable);
+        console.log('onLoad'+"  "+aenable+"  "+this._audioEnable);
         if(this._audioEnable)
         {
             cc.audioEngine.playMusic(this.musicClip,true);

@@ -60,7 +60,7 @@ cc.Class({
     {
         var childArray  = this.objsParentArr[index].children;
         var childCount = childArray.length;
-        // cc.log("generateFish1--->"+ this._maxObjsNumArr[index] + '     '+ childCount+'   '+this._poolArray[index].size() );
+        // console.log("generateFish1--->"+ this._maxObjsNumArr[index] + '     '+ childCount+'   '+this._poolArray[index].size() );
         if(this._waitTimeArr[index] > this._intervalArr[index])
         {
             if(childCount ==  this._maxObjsNumArr[index])
@@ -110,7 +110,7 @@ cc.Class({
 
     randomObjData(obj,index,type)
     {
-        // cc.log('randomObjData');
+        // console.log('randomObjData');
         var aniNode =  obj.getChildByName("aniNode");
         var animCtrl = aniNode.getComponent(cc.Animation);
         if(type == 'fish')
@@ -140,6 +140,6 @@ cc.Class({
             animCtrl.currentClip.speed = aniSpeed;
         }
         obj.opacity = 0;
-        obj.runAction(cc.FadeIn(0));
+        obj.runAction(cc.fadeIn(0));
     },
 });

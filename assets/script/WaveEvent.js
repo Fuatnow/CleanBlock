@@ -13,7 +13,7 @@ cc.Class({
 
     moveLeftCallBack(name)
     {
-        cc.log("moveLeftEnd");
+        console.log("moveLeftEnd");
         for(var i=0;i<this.waveArray.length;i++)
         {
             if(this.waveArray[i].name == name)

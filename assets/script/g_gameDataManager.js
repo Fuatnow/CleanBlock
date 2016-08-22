@@ -12,11 +12,11 @@ var g_gameDataManager = {
 
     printStorageDetail()
     {
-        cc.log('printStorageDetail');
+        console.log('printStorageDetail');
         var storage = cc.sys.localStorage;
         for(var i=0;i<storage.length;i++)
         {
-            cc.log(storage.key(i)+ " : " + storage.getItem(storage.key(i)) );
+            console.log(storage.key(i)+ " : " + storage.getItem(storage.key(i)) );
         }
     },
     

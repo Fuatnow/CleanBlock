@@ -41,8 +41,8 @@ cc.Class({
                 var aimPos = cc.p(298,startY+(i+1)*disY);
                 node.setScale(startScale);
                 node.position = cc.p(298,startY);
-                node.runAction(cc.ScaleTo(0.2,1.0));
-                node.runAction(cc.MoveTo(0.2,aimPos));
+                node.runAction(cc.scaleTo(0.2,1.0));
+                node.runAction(cc.moveTo(0.2,aimPos));
              }
             
             var audioNode = cc.find("AudioControl");
@@ -55,19 +55,19 @@ cc.Class({
 
     restartCallBack()
     {
-        cc.log("restartCallBack");
+        console.log("restartCallBack");
         cc.director.loadScene('GameScene');
     },
 
     homeCallBack()
     {
-        cc.log("homeCallBack");
+        console.log("homeCallBack");
         cc.director.loadScene('LevelSelectScene');
     },
 
     musicCallBack()
     {
-         cc.log("musicCallBack");
+         console.log("musicCallBack");
          var audioCtrl = cc.find("AudioControl").getComponent(require("AudioControl"));
          var isEnableMusic = audioCtrl.getAudioEnable();
          audioCtrl.setAudioEnable(!isEnableMusic);
@@ -79,7 +79,7 @@ cc.Class({
 
     rateCallBack()
     {
-        cc.log("rateCallBack");
+        console.log("rateCallBack");
         
     },
 
@@ -92,7 +92,7 @@ cc.Class({
 
     helpCloseCallBack()
     {
-        cc.log("helpCloseCallBack");
+        console.log("helpCloseCallBack");
         this.helpLayer.active = false;
         this.gameLayer.active = true;
         this.node.active = true;

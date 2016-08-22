@@ -23,7 +23,7 @@ cc.Class({
                 cc.error(err.message || err);
                 return;
             }
-            // cc.log('Result should be a sprite frame: ' + (spriteFrame instanceof cc.SpriteFrame));
+            // console.log('Result should be a sprite frame: ' + (spriteFrame instanceof cc.SpriteFrame));
             this.levelBg.spriteFrame = spriteFrame;
         }.bind(this));
     },
@@ -41,7 +41,7 @@ cc.Class({
         // log("---->"+ (get_time()-start_time));
         if (err) 
         {
-            cc.log('Error url [' + err + ']');
+            console.log('Error url [' + err + ']');
             return;
         } 
 
